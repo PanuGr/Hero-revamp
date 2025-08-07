@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!--Basic SEO-->
+    <title>SellMyPhone - Get The Best Price For Your Phone Today!</title>
+    <meta name="description" content="Get top dollar for your phone today! We offer the best prices and a hassle-free selling experience.">
+    <meta name="keywords" content="sell phone, best phone prices, iPhone, Samsung, device selling">
+    <meta name="author" content="SellMyPhone">
+    <!-- Atkinson Hyperlegible Font -->
+    <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet">
+    <!-- DaisyUI + Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!--AnimateCSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        /* RESET CSS */
+        :root {
+            interpolate-size: allow-keywords;
+            --font: 'atkinson-hyperlegible', system-ui;
+            --primary-green: #1E675E;
+            --accent-orange: #F58A2E;
+            --light-gray: #f8fafc;
+            --dark-gray: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            max-width: 1920px;
+            margin: auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        body {
+            min-height: 100dvh;
+            font-family: var(--font);
+            text-rendering: optimizeSpeed;
+            background: #ffffff;
+        }
+
+        img,
+        svg,
+        video,
+        picture {
+            max-width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+            field-sizing: content;
+        }
+
+        footer {
+            content-visibility: auto;
+            margin-top: auto;
+        }
+
+        /* Custom styles */
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, var(--light-gray) 100%);
+        }
+
+        .btn-orange {
+            background: var(--accent-orange);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(245, 138, 46, 0.1);
+        }
+
+        .btn-orange:hover {
+            background: #e07b2a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px -3px rgba(245, 138, 46, 0.2);
+        }
+
+        .check-icon {
+            color: var(--primary-green);
+            background: rgba(30, 103, 94, 0.1);
+            border-radius: 50%;
+            padding: 0.25rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.1);
+        }
+
+        .star-rating {
+            color: #fbbf24;
+        }
+
+        .device-visual {
+            position: relative;
+            transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+            transition: all 0.3s ease;
+        }
+
+        .device-visual:hover {
+            transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                animation: none;
+                transition: none;
+            }
+        }
+
+        /* Scroll animations */
+        @supports (animation-timeline: scroll()) {
+            .scroll-fade-in {
+                animation: fadeInUp 1s ease-out;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content"
+        class="skip-link sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-primary focus:text-white">Skip
+        to main content</a>
+    
+    <nav aria-label="main navigation" class="text-orange-600 navbar bg-white shadow-sm sticky top-0 z-50" id="navbar">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <button tabindex="0" type="button" id="menu-toggle" aria-label="Toggle navigation menu"
+                    class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="#" class="hover:text-orange-500">Start Selling</a></li>
+                    <li><a href="#" class="hover:text-orange-500">iPhone</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Samsung</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Other Devices</a></li>
+                </ul>
+            </div>
+            <h1><a href="#" class="text-xl font-bold" style="color: var(--primary-green);">SellMyPhone</a></h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#" class="hover:text-orange-500">Start Selling</a></li>
+                <li><a href="#" class="hover:text-orange-500">iPhone</a></li>
+                <li><a href="#" class="hover:text-orange-500">Samsung</a></li>
+                <li><a href="#" class="hover:text-orange-500">Other Devices</a></li>
+                <li><a href="#" class="hover:text-orange-500">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <button type="button" class="btn-orange">Get Quote</button>
+        </div>
+    </nav>
+
+    <header class="hero-gradient min-h-screen flex items-center py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Content -->
+                <div class="space-y-8 animate__animated animate__fadeInLeft">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-6xl font-bold leading-tight" style="color: var(--dark-gray);">
+                            Get The 
+                            <span style="color: var(--primary-green);">Best Price</span> 
+                            For Your 
+                            <span style="color: var(--accent-orange);">Phone</span> 
+                            Today!
+                        </h1>
+                        <p class="text-lg text-gray-600 max-w-lg">
+                            Get top dollar for your phone today! We offer the best prices and a hassle-free selling experience. Contact us to find out how much your device is worth!
+                        </p>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <ion-icon name="checkmark-circle" class="check-icon text-2xl" aria-hidden="true"></ion-icon>
+                            <span class="text-gray-700">Instant price quotes</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <ion-icon name="checkmark-circle" class="check-icon text-2xl" aria-hidden="true"></ion-icon>
+                            <span class="text-gray-700">Free shipping & insurance</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <ion-icon name="checkmark-circle" class="check-icon text-2xl" aria-hidden="true"></ion-icon>
+                            <span class="text-gray-700">Fast payment within 24 hours</span>
+                        </div>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <div class="flex gap-3">
+                            <div class="flex-1">
+                                <input type="text" 
+                                       placeholder="Search your device (e.g., iPhone 15 Pro)" 
+                                       class="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                       aria-label="Search your device">
+                            </div>
+                            <button type="button" class="btn-orange px-8">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Popular Tags -->
+                    <div class="space-y-3">
+                        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Popular Devices:</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 bg-white rounded-full text-sm text-gray-600 shadow-sm hover:shadow-md transition-shadow cursor-pointer">iPhone 15</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm text-gray-600 shadow-sm hover:shadow-md transition-shadow cursor-pointer">Samsung Galaxy</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm text-gray-600 shadow-sm hover:shadow-md transition-shadow cursor-pointer">AirPods</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm text-gray-600 shadow-sm hover:shadow-md transition-shadow cursor-pointer">MacBook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Device Visual -->
+                <div class="relative animate__animated animate__fadeInRight">
+                    <div class="device-visual floating">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=600&h=800&fit=crop&crop=center" 
+                             alt="Modern smartphone" 
+                             class="mx-auto max-w-sm rounded-3xl shadow-2xl"
+                             loading="lazy" 
+                             decoding="async">
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="absolute top-10 right-0 bg-white p-3 rounded-full shadow-lg animate-pulse">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <div class="absolute bottom-20 left-0 bg-white p-3 rounded-full shadow-lg animate-pulse" style="animation-delay: 1s;">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Customer Testimonials Section -->
+    <section class="py-16 bg-white scroll-fade-in">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: var(--dark-gray);">
+                    Trusted by <span style="color: var(--primary-green);">50,000+</span> Happy Customers
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Don't just take our word for it. See what our customers have to say about their experience.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6">
+                    <div class="star-rating mb-4">
+                        <span class="text-2xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Incredibly easy process! Got my quote instantly and received payment the next day. Highly recommend!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" 
+                             alt="Customer photo" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             loading="lazy" 
+                             decoding="async" 
+                             aria-hidden="true">
+                        <div>
+                            <div class="font-semibold">Sarah Johnson</div>
+                            <div class="text-sm text-gray-500">Sold iPhone 14 Pro</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6">
+                    <div class="star-rating mb-4">
+                        <span class="text-2xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Best prices I found online. The whole process was transparent and professional."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&fit=crop&crop=face" 
+                             alt="Customer photo" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             loading="lazy" 
+                             decoding="async" 
+                             aria-hidden="true">
+                        <div>
+                            <div class="font-semibold">Mike Chen</div>
+                            <div class="text-sm text-gray-500">Sold Samsung Galaxy S23</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6">
+                    <div class="star-rating mb-4">
+                        <span class="text-2xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Free shipping, fast payment, and excellent customer service. Couldn't ask for more!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=48&h=48&fit=crop&crop=face" 
+                             alt="Customer photo" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             loading="lazy" 
+                             decoding="async" 
+                             aria-hidden="true">
+                        <div>
+                            <div class="font-semibold">Emily Rodriguez</div>
+                            <div class="text-sm text-gray-500">Sold iPad Air</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Stats -->
+            <div class="grid md:grid-cols-4 gap-8 mt-16 text-center">
+                <div>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary-green);">50K+</div>
+                    <div class="text-gray-600">Devices Sold</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary-green);">4.9/5</div>
+                    <div class="text-gray-600">Customer Rating</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary-green);">24hrs</div>
+                    <div class="text-gray-600">Average Payment Time</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary-green);">$2.5M+</div>
+                    <div class="text-gray-600">Total Paid Out</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Additional content would go here -->
+    </main>
+
+    <footer class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2024 SellMyPhone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Menu toggles on small screens
+            const menuToggle = document.getElementById('menu-toggle');
+            const dropdown = menuToggle?.nextElementSibling;
+            
+            menuToggle?.addEventListener('click', () => {
+                dropdown?.classList.toggle('hidden');
+            });
+
+            // Menu closes when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!menuToggle?.contains(e.target) && !dropdown?.contains(e.target)) {
+                    dropdown?.classList.add('hidden');
+                }
+            });
+
+            // Scroll-based show/hide navigation menu
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', function () {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    navbar.style.transform = 'translateY(0)';
+                }
+                lastScrollTop = scrollTop;
+            });
+
+            // Add hover effects to testimonial cards
+            const cards = document.querySelectorAll('.testimonial-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-8px)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
